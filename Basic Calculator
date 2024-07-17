@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+    printf("Operations:");
+    printf("\nEnter 1 for Addition");
+    printf("\nEnter 2 for Subtraction");
+    printf("\nEnter 3 for Multiplication");
+    printf("\nEnter 4 for Division");
+    printf("\nOperation Needed:");
+    int value;
+    scanf("%d",&value);
+    printf("Enter the numbers:");
+    int n1,n2,sum,diff,mul,div;
+    scanf("%d %d",&n1,&n2);
+    if (value==1){
+        sum=n1+n2;
+        printf("Sum=%d",sum);}
+    else if (value==2){
+        diff=n1-n2;
+        printf("Difference=%d",diff);}
+    else if (value==3){
+        mul=n1*n2;
+        printf("Product=%d",mul);}
+    else if (value==4){
+        div=n1/n2;
+        printf("Quotient=%d",div);}
+return 0;
+}
